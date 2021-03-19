@@ -1,0 +1,28 @@
+h1{
+  font-size: 50px;
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 25px;
+}
+
+.logo img{
+  height: 30px;
+  vertical-align: middle;
+}
+.debug{
+  background-color: red;
+  border: 1px solid black;
+}
+[class*="col-"]{
+  min-height: 50px;
+  margin-bottom: 10px;
+}
+.jumbotron{
+  min-height: 400px;
+}
+.jumbotron [class*="col-"]{
+  min-height: 300px;
+}
