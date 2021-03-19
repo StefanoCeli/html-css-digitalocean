@@ -12,8 +12,14 @@ h3{
   height: 30px;
   vertical-align: middle;
 }
+.blue-text{
+  color: #3a8aff;
+}
+.btn._btn_nav{
+  background-color: transparent;
+}
 .debug{
-  background-color: red;
+  background-color: rgba(109, 10, 10, 0.3);
   border: 1px solid black;
 }
 [class*="col-"]{
@@ -22,7 +28,18 @@ h3{
 }
 .jumbotron{
   min-height: 400px;
+  margin: 0;
 }
 .jumbotron [class*="col-"]{
   min-height: 300px;
+}
+.sponsor, .designed, .development{
+  background-color: aquamarine;
+}
+.deploy, .services, footer{
+  background-color:salmon;
+}
+.wrapper-60{
+  width: 60%;
+  margin: 0 auto;
 }
