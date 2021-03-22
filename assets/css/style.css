@@ -1,3 +1,4 @@
+/* GLOBAL */
 body{
   font-family: 'Roboto', sans-serif;
 }
@@ -10,28 +11,65 @@ h2{
 h3{
   font-size: 25px;
 }
+ul{
+  list-style: none;
+}
+ul li{
+  display: inline;
+}
 
+/* DA RIVEDERE */
+nav{
+  position: fixed;
+  top:0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999; 
+  
+}
+nav .row{
+  margin-top: 20px;
+}
+nav .row li{
+  line-height: 34px;
+  margin-right: 20px;
+}
+nav .row li a.btn._btn_nav{
+  border: 1px solid #3a8aff;
+}
 .logo img{
-  height: 30px;
+  height: 25px;
+}
+._v_middle{
   vertical-align: middle;
 }
+
 .blue-text{
   color: #3a8aff;
 }
-.btn._btn_nav{
+._btn_nav{
   background-color: transparent;
+  border: none;
 }
+._btn_nav:focus{
+  outline: none;
+}
+/* DA RIVEDERE */
+
+
+
 .debug{
   background-color: rgba(109, 10, 10, 0.3);
   border: 1px solid black;
 }
-[class*="col-"]{
+.debug [class*="col-"]{
   min-height: 50px;
   margin-bottom: 10px;
 }
 .jumbotron{
   min-height: 400px;
-  margin: 0;
+  margin-top: 65px;
+  margin-bottom: 0;
 }
 .jumbotron [class*="col-"]{
   min-height: 300px;
