@@ -1,3 +1,6 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
 h1{
   font-size: 50px;
 }
@@ -39,7 +42,4 @@ h3{
 .deploy, .services, footer{
   background-color:salmon;
 }
-.wrapper-60{
-  width: 60%;
-  margin: 0 auto;
-}
+
