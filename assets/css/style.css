@@ -1,6 +1,7 @@
 /* GLOBAL */
 body{
   font-family: 'Roboto', sans-serif;
+  color: black;
 }
 h1{
   font-size: 50px;
@@ -9,7 +10,7 @@ h2{
   font-size: 30px;
 }
 h3{
-  font-size: 25px;
+  font-size: 30px;
 }
 ul{
   list-style: none;
@@ -24,7 +25,16 @@ ul li{
   vertical-align: middle;
 }
 .blue-text{
-  color: #3a8aff;
+  color: #006aff;
+}
+._white_text{
+  color: #fff;
+}
+._bg_white{
+  background-color: #fff;
+}
+._p20{
+  padding: 20px;
 }
 
 /* NAVBAR */
@@ -49,8 +59,8 @@ nav .row li a{
   font-weight: 500;
 }
 nav .row li a.btn._btn_nav{
-  border: 1px solid #3a8aff;
-  color: #3a8aff;
+  border: 1px solid #006aff;
+  color: #006aff;
 }
 .logo img{
   height: 25px;
@@ -74,14 +84,33 @@ nav .row li a.btn._btn_nav{
 }
 
 /* JUMBOTRON */
-.jumbotron{
+._my_jumbotron{
   margin-top: 65px;
   margin-bottom: 0;
   background-image: url(../img/bg-banner-home.jpg);
-  background-size: cover;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.jumbotron [class*="col-"]{
-  min-height: 300px;
+._my_jumbotron p{
+  color: #bbcbfd;
+}
+._my_jumbotron h3{
+  font-weight: 700;
+}
+._my_jumbotron h3:last-child{
+  margin-top: 0;
+}
+._login_box{
+  border-radius: 10px;
+}
+._login_box input.form-control{
+  height: 45px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+._login_box input::placeholder{
+  font-weight: 500;
 }
 /* /JUMBOTRON */
 .sponsor, .designed, .development{
