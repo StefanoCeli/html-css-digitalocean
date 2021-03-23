@@ -18,17 +18,18 @@ ul{
 ul li{
   display: inline;
 }
-._mb_20{
-  margin-bottom: 20px;
-}
-._v_middle{
-  vertical-align: middle;
-}
-.blue-text{
+._blue_text{
   color: #006aff;
+}
+._blue_text:hover{
+  color: #006aff;
+  text-decoration: underline;
 }
 ._white_text{
   color: #fff;
+}
+._lgray_text{
+  color: #6f7b97;
 }
 ._bg_white{
   background-color: #fff;
@@ -45,8 +46,15 @@ ul li{
 .fw700{
   font-weight: 700;
 }
+._mt_50{
+  margin-top: 50px;
+}
+._mb_30{
+  margin-bottom: 30px;
+}
 
 /* NAVBAR */
+
 nav{
   position: fixed;
   top:0;
@@ -73,6 +81,7 @@ nav .row li a.btn._btn_nav{
 }
 .logo img{
   height: 25px;
+  margin-bottom: 20px;
 }
 ._btn_nav{
   background-color: transparent;
@@ -81,6 +90,7 @@ nav .row li a.btn._btn_nav{
 ._btn_nav:focus{
   outline: none;
 }
+
 /* /NAVBAR */
 
 .debug{
@@ -104,10 +114,7 @@ nav .row li a.btn._btn_nav{
 ._my_jumbotron p{
   color: #bbcbfd;
 }
-._my_jumbotron h3{
-  font-weight: 700;
-}
-._my_jumbotron h3:last-child{
+.jumbotron._my_jumbotron h3:last-of-type{
   margin-top: 0;
 }
 ._login_box{
@@ -130,21 +137,31 @@ width: 100%;
   color:#fff;
 }
 ._login_btn._bg_white{
-  box-shadow: 1px 1px 2px lightgray;
+  box-shadow: 2px 2px 2px 1px lightgray;
   color: gray;
-  font-weight: 700;
 }
 ._terms{
   text-decoration: underline;
 }
-._terms:hover{
-  color: #006aff;
-}
 
 /* /JUMBOTRON */
+
+/* SPONSOR */
+
 .sponsor, .designed, .development{
-  background-color: aquamarine;
+  background-color: #f3f5f9;
 }
+._sponsor_img{
+  overflow: hidden;
+  height: 150px;
+}
+
+._sponsor_img img{
+ width: 100%;
+ height: 100%;
+} 
+
+/* SPONSOR */
 .deploy, .services, footer{
   background-color:salmon;
 }
