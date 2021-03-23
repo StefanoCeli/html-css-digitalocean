@@ -33,8 +33,17 @@ ul li{
 ._bg_white{
   background-color: #fff;
 }
+._bg_blue{
+  background-color: #579aff;
+}
 ._p20{
   padding: 20px;
+}
+.fw500{
+  font-weight: 500;
+}
+.fw700{
+  font-weight: 700;
 }
 
 /* NAVBAR */
@@ -104,14 +113,34 @@ nav .row li a.btn._btn_nav{
 ._login_box{
   border-radius: 10px;
 }
+._login_box input{
+  margin-bottom: 10px;
+}
 ._login_box input.form-control{
   height: 45px;
   padding: 5px;
-  margin-bottom: 10px;
 }
 ._login_box input::placeholder{
   font-weight: 500;
 }
+._login_btn{
+width: 100%;
+}
+._login_btn._bg_blue._disabled:hover{
+  color:#fff;
+}
+._login_btn._bg_white{
+  box-shadow: 1px 1px 2px lightgray;
+  color: gray;
+  font-weight: 700;
+}
+._terms{
+  text-decoration: underline;
+}
+._terms:hover{
+  color: #006aff;
+}
+
 /* /JUMBOTRON */
 .sponsor, .designed, .development{
   background-color: aquamarine;
