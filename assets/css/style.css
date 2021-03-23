@@ -202,6 +202,44 @@ ul._menu_block{
 }
 
 /* DEPLOY */
+
+/* DESIGNED */
+
+._carousel img{
+  width: 100%;
+}
+._carousel i{
+  font-size: 50px;
+}
+._carousel{
+  margin-top: 60px;
+  position: relative;
+}
+._carousel::before{
+  content: url(../img/angle-left-solid.svg);
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 105%;
+  transform: translateY(-50%); 
+}
+
+._carousel::after{
+  content: url(../img/angle-right-solid.svg);
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  transform: translateY(-50%); 
+}
+._select_circle i{
+  color: #006aff;
+}
+._select_circle i._active{
+  background-color: #006aff;
+  border-radius: 50%;
+}
+/* DESIGNED */
 .services, footer{
   background-color:salmon;
 }
