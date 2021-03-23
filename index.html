@@ -24,7 +24,7 @@
           <div class="logo"><img src="assets/img/logo.png" alt="logo"></div>
         </div>
         <div class="col-lg-5 visible-lg">
-          <ul>
+          <ul class="_menu_inline">
             <li><a href="#">Products<i class="fas fa-chevron-down"></i></a></li>
             <li><a href="#">Customers</a></li>
             <li><a href="#">Community<i class="fas fa-chevron-down"></i></a></li>
@@ -33,7 +33,7 @@
         </div>
 
         <div class="col-lg-4 visible-lg text-right">
-          <ul>
+          <ul class=" _menu_inline">
             <li><a href="#">Docs</a></li>
             <li><a href="#">Support<i class="fas fa-chevron-down"></i></a></li>
             <li><a href="#">Login</a></li>
@@ -61,11 +61,11 @@
   <!-- MAIN -->
   <main>
     <!-- JUMBOTRON -->
-    <div class="jumbotron _my_jumbotron">
+    <div class="jumbotron _my_jumbotron _p_tb60">
       <div class="container">
         <!-- ROW -->
         <div class="row">
-          <div class="col-md-7 col-xs-12 _white_text">
+          <div class="col-sm-7 col-xs-12 _white_text">
             <h1>
               The simplest cloud platform for developers & teams
             </h1>
@@ -73,7 +73,7 @@
               Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and business, whether you're running one virtual machine or ten thousand.
             </p>
           </div>
-          <div class="col-md-5 col-xs-12 text-center">
+          <div class="col-sm-5 col-xs-12 text-center">
             <div class="_login_box _p20 _bg_white ">
               <h3 class="fw700">
                 Deploy your app in seconds.
@@ -85,7 +85,7 @@
                 <input class=" form-control" placeholder="Email" type="email">
                 <input class=" form-control" placeholder="Password" type="password">
                 <input type="button" class="btn _login_btn _bg_blue _white_text _disabled" value="Create your account">
-                <input type="button" class="btn _login_btn _bg_white fw700" value="Sign up with google">
+                <input type="button" class="btn _login_btn _icon_google _bg_white fw700" value="Sign up with google">
               </form>
               <span class="fw500 small">By signing up you agree to the <a class="fw700 _blue_text _terms" href="#">Terms of Services</a></span>
             </div>
@@ -100,7 +100,7 @@
     <div class="sponsor">
       <div class="container text-center">
          <!-- ROW1 -->
-        <div class="row fw700 _mt_50">
+        <div class="row fw700 _mt_50  _mb_20">
           <div class="col-xs-12">
             <span class="_lgray_text text-uppercase">innovative business trust digitalocean</span>
           </div>
@@ -108,19 +108,23 @@
 
          <!-- ROW2 -->
         <div class="row">
-          <div class="col-md-2 col-xs-6 _sponsor_img"><img src="assets/img/docker.svg" alt="docker"></div>
-          <div class="col-md-2 col-xs-6 _sponsor_img"><img src="assets/img/gitlab.svg" alt="gitlab"></div>
-          <div class="col-md-2 col-xs-6 _sponsor_img"><img src="assets/img/slack.svg" alt="slack"></div>
-          <div class="col-md-2 col-xs-6 _sponsor_img"><img src="assets/img/hashicorp.svg" alt="hashicorp"></div>
-          <div class="col-md-2 col-xs-6 _sponsor_img"><img src="assets/img/wework.svg" alt="wework"></div>
-          <div class="col-md-2 col-xs-6 _sponsor_img"><img src="assets/img/splunk.svg" alt="splunk"></div>
+          <div class="col-xs-12">
+            <ul class="_menu_inline">
+              <li class="_sponsor_img"><img src="assets/img/docker.svg" alt="docker"></li>
+              <li class="_sponsor_img"><img src="assets/img/gitlab.svg" alt="gitlab"></li>
+              <li class="_sponsor_img"><img src="assets/img/slack.svg" alt="slack"></li>
+              <li class="_sponsor_img"><img src="assets/img/hashicorp.svg" alt="hashicorp"></li>
+              <li class="_sponsor_img"><img src="assets/img/wework.svg" alt="wework"></li>
+              <li class="_sponsor_img"><img src="assets/img/splunk.svg" alt="splunk"></li>
+            </ul>
+          </div>
         </div>
         
         
          <!-- ROW3 -->
         <div class="row">
           <div class="col-xs-12  _mb_30">
-            <a class="fw500 _blue_text" href="#">View customer stories ></a>
+            <a class="fw500 _blue_text _mini_arrow_r" href="#">View customer stories</a>
           </div>
           
         </div>
@@ -130,33 +134,72 @@
     <!-- /SPONSOR -->
 
     <!-- DEPLOY -->
-    <div class="deploy">
+    <div class="deploy _p_tb60">
       <div class="container">
          <!-- ROW1 -->
         <div class="row">
 
-          <div class="col-xs-12 text-center debug">
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo, illo eligendi nam deleniti ut aliquam.
+          <div class="col-xs-12 text-center">
+            <h2>Deploy and scale seamlessly</h2>
+            <p class="_my_lead _lgray_text _mb_20 fw500">
+              Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.
                
             </p>
           </div>
         </div>
        <!--  ROW2 -->
-        <div class="row">
-          <div class="col-xs-12 debug">
-              <div class="col-md-4 col-xs-12 debug"></div>
-              <div class="col-md-8 col-xs-12 debug">
+        <div class="row _mt_50">
+          <div class="col-xs-12">
+              <div class="col-sm-offset-1 col-sm-3 col-xs-12">
+                <ul class="_menu_block _lgray_text">
+                  <li>Deploy</li>
+                  <li>Manage</li>
+                  <li>Secure</li>
+                  <li>Scale</li>
+                  <li>Monitor</li>
+                </ul>
+              </div>
+
+              <div class="col-sm-8 col-xs-12">
                 <!-- NESTED ROW -->
                 <div class="row">
-                  <div class="col-md-6 col-xs-12">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat quidem tenetur! Consequatur, pariatur id quasi nostrum quidem eligendi voluptatibus ducimus odit numquam eveniet error. Quod exercitationem explicabo at enim.</div>
+                  
+                  <div class="col-sm-6 col-xs-12">
+                    <div><img src="assets/img/cluster-deploy.svg" alt="cluster-deploy"></div>
+                    <h4>Cluster deployments</h4>
+                    <p>
+                      Provision multiple Droplets &#40;virtual machines&#41; in seconds with our control panel, CLI, or directily against our API.
+                    </p>
+                  </div>
+                  
+                  <div class="col-sm-6 col-xs-12">
+                    <div><img src="assets/img/optimized-compute.svg" alt="optimized-compute"></div>
+                    <h4>Optimized compute types</h4>
+                    <p>
+                      Get the resources you need with Standard or Optimized Droplets.
+                    </p>
+                  </div>
+              </div>
 
-                  <div class="col-md-6 col-xs-12">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat quidem tenetur! Consequatur, pariatur id quasi nostrum quidem eligendi voluptatibus ducimus odit numquam eveniet error. Quod exercitationem explicabo at enim.</div>
+              <!-- NESTED ROW2 -->
+              <div class="row">
 
-                  <div class="col-md-6 col-xs-12">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat quidem tenetur! Consequatur, pariatur id quasi nostrum quidem eligendi voluptatibus ducimus odit numquam eveniet error. Quod exercitationem explicabo at enim.</div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div><img src="assets/img/one-click.svg" alt="one-click"></div>
+                    <h4>One-click apps</h4>
+                    <p>
+                      Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.
+                    </p>
+                  </div>
 
-                  <div class="col-md-6 col-xs-12">4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat quidem tenetur! Consequatur, pariatur id quasi nostrum quidem eligendi voluptatibus ducimus odit numquam eveniet error. Quod exercitationem explicabo at enim.</div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div><img src="assets/img/global.svg" alt="global"></div>
+                    <h4>Global availability</h4>
+                    <p>
+                      Deploy to any our data center regions around the world.
+                    </p>
+                  </div>
+
                 </div>
               </div>
           </div>
@@ -200,9 +243,9 @@
         <!-- ROW -->
         <div class="row">
           <div class="col-xs-12 debug"></div>
-          <div class="col-md-4 col-xs-12 debug"></div>
-          <div class="col-md-4 col-xs-12 debug"></div>
-          <div class="col-md-4 col-xs-12 debug"></div>
+          <div class="col-sm-4 col-xs-12 debug"></div>
+          <div class="col-sm-4 col-xs-12 debug"></div>
+          <div class="col-sm-4 col-xs-12 debug"></div>
         </div>
          <!-- /ROW -->
       </div>
@@ -356,10 +399,10 @@
 
           <!-- NESTED ROW -->
           <div class="row">
-            <div class="col-lg-3 col-md-6  col-xs-12 debug"></div>
-            <div class="col-lg-3 col-md-6  col-xs-12 debug"></div>
-            <div class="col-lg-3 col-md-6  col-xs-12 debug"></div>
-            <div class="col-lg-3 col-md-6  col-xs-12 debug"></div>
+            <div class="col-lg-3 col-sm-6  col-xs-12 debug"></div>
+            <div class="col-lg-3 col-sm-6  col-xs-12 debug"></div>
+            <div class="col-lg-3 col-sm-6  col-xs-12 debug"></div>
+            <div class="col-lg-3 col-sm-6  col-xs-12 debug"></div>
           </div>
           <!-- /NESTED ROW -->
         </div>

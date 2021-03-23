@@ -7,21 +7,21 @@ h1{
   font-size: 50px;
 }
 h2{
-  font-size: 30px;
+  font-size: 35px;
 }
 h3{
   font-size: 30px;
 }
-ul{
+._menu_inline{
   list-style: none;
 }
-ul li{
+._menu_inline li{
   display: inline;
 }
 ._blue_text{
   color: #006aff;
 }
-._blue_text:hover{
+a._blue_text:hover{
   color: #006aff;
   text-decoration: underline;
 }
@@ -37,9 +37,6 @@ ul li{
 ._bg_blue{
   background-color: #579aff;
 }
-._p20{
-  padding: 20px;
-}
 .fw500{
   font-weight: 500;
 }
@@ -52,7 +49,15 @@ ul li{
 ._mb_30{
   margin-bottom: 30px;
 }
-
+._mb_20{
+  margin-bottom: 20px;
+}
+._p_tb60{
+  padding: 60px 0;
+}
+._p20{
+  padding: 20px;
+}
 /* NAVBAR */
 
 nav{
@@ -66,16 +71,16 @@ nav{
 nav .row{
   margin-top: 20px;
 }
-nav .row li{
+nav ._menu_inline li{
   line-height: 34px;
   margin-right: 20px;
 }
-nav .row li a{
+nav ._menu_inline li a{
   color: black;
   text-decoration: none;
   font-weight: 500;
 }
-nav .row li a.btn._btn_nav{
+nav ._menu_inline li a.btn._btn_nav{
   border: 1px solid #006aff;
   color: #006aff;
 }
@@ -87,8 +92,9 @@ nav .row li a.btn._btn_nav{
   background-color: transparent;
   border: none;
 }
-._btn_nav:focus{
+.btn._btn_nav:focus{
   outline: none;
+  box-shadow: none;
 }
 
 /* /NAVBAR */
@@ -113,6 +119,7 @@ nav .row li a.btn._btn_nav{
 }
 ._my_jumbotron p{
   color: #bbcbfd;
+  padding-right:50px;
 }
 .jumbotron._my_jumbotron h3:last-of-type{
   margin-top: 0;
@@ -131,12 +138,16 @@ nav .row li a.btn._btn_nav{
   font-weight: 500;
 }
 ._login_btn{
-width: 100%;
+  width: 100%;
 }
 ._login_btn._bg_blue._disabled:hover{
   color:#fff;
 }
-._login_btn._bg_white{
+._login_btn._icon_google{
+  background-image: url(../img/google-icon.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
   box-shadow: 2px 2px 2px 1px lightgray;
   color: gray;
 }
@@ -151,18 +162,47 @@ width: 100%;
 .sponsor, .designed, .development{
   background-color: #f3f5f9;
 }
-._sponsor_img{
-  overflow: hidden;
-  height: 150px;
+.sponsor ._menu_inline{
+  padding: 0;
+  font-size: 0;
 }
 
-._sponsor_img img{
- width: 100%;
- height: 100%;
-} 
+.sponsor ._menu_inline li._sponsor_img{
+  width: calc(100% / 6);
+  padding: 0 10px;
+  display: inline-block;
+}
+.sponsor ._menu_inline li._sponsor_img img{
+  width:90%;
+}
+
+._blue_text._mini_arrow_r::after{
+  content: '>';
+  display: inline-block;
+  margin-left: 10px;
+}
 
 /* SPONSOR */
-.deploy, .services, footer{
+
+/* DEPLOY */
+._my_lead{
+  font-size: 21px;
+}
+ul._menu_block{
+  list-style: none;
+  padding: 0;
+}
+._menu_block{
+  list-style: none;
+  border-left: 2px solid lightgray;
+}
+._menu_block li{
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+/* DEPLOY */
+.services, footer{
   background-color:salmon;
 }
 
